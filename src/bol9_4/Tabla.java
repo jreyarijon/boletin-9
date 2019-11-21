@@ -12,26 +12,29 @@ import java.util.Scanner;
  * @author jreyarijon
  */
 public class Tabla {
+
     private int num;
-    
-    public Tabla(){
-        
+
+    public Tabla() {
+
     }
-    public Tabla(int n){
+
+    public Tabla(int n) {
         num = n;
     }
-    public void darDatos(){
+
+    public void darDatos() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Teclee numero: ");
         num = sc.nextInt();
     }
-    public void Calcular(){
-        int contador = 0;
-        int acumulador = 1;
-        while(num != 0)
-            acumulador = contador * num;
-            contador++;
-            
-            
+
+    public void Calcular() {
+        darDatos();
+        int i;
+        for (i = 1; i <= 10; i++) {
+            System.out.println(i + " * " + num + "= " + i * num);
+        }
+
     }
 }

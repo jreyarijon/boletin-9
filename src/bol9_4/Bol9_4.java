@@ -17,7 +17,8 @@ public class Bol9_4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Tabla multiplicar = new Tabla();
-        
+        multiplicar.Calcular();
+
     }
-    
+
 }
